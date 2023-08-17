@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import all from "@/components/all.json"
+import all from "@/components/india.json"
 
 const locationPage = ({ text }) => {
   return (
@@ -13,6 +13,7 @@ export async function getStaticPaths() {
     const countryNames = [];
     const stateNames = [];
     const cityNames = [];
+
 
     for (const country of data) {
       countryNames.push(country.name);
@@ -47,7 +48,6 @@ export async function getStaticPaths() {
   }
 
   const pathArr = getCountryStateCityNames(all)
-
 
   return {
     paths: pathArr,
