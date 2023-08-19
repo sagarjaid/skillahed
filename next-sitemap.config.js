@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://skillahead.co',
+  siteUrl: 'https://hyperlinkschool.com',
   generateRobotsTxt: true,
   sitemapSize: 1000,
 };
