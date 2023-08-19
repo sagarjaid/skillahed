@@ -11,13 +11,13 @@ const TC = () => {
         description="10X faster & better way to write viral 30 sec short video script for Instagram Reel, TikTok and Youtube shorts"
         slug="tc"
       />
-      <HelloBar />
+
       <main className="m-auto flex max-w-5xl flex-col px-4">
 
         <div className="flex flex-col items-start justify-center gap-6 px-4 py-10 ">
           <div className="flex flex-col gap-2 text-2xl font-medium">
             Terms and Conditions
-            <div className="text-sm">Updated on 1 April, 2023</div>
+            <div className="text-sm">Updated on 1 September, 2023</div>
           </div>
           <p>
             Welcome to Hyperlink School! .These terms and conditions outline the rules

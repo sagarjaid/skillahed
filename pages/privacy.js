@@ -16,7 +16,7 @@ const Privacy = () => {
         <div className="flex flex-col items-start justify-center gap-6 px-4 py-10 ">
           <div className="flex flex-col gap-2 text-2xl font-medium">
             Privacy Policy
-            <div className="text-sm">Updated on 1 April, 2023</div>
+            <div className="text-sm">Updated on 1 September, 2023</div>
           </div>
           <p>
             At Hyperlink School, accessible from https://hyperlinkschool.com/, one of our main
