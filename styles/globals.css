@@ -1,6 +1,4 @@
-@import url(./fonts.css);
-
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,6 +6,32 @@
 
 @layer base {
   html {
-    font-family: 'Cerebri sans', sans-serif, system-ui;
+    font-family: 'Nunito', sans-serif, system-ui;
   }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slide-w {
+  animation: scroll 40s linear infinite;
+}
+
+.slide-track {
+  animation: scroll 40s linear infinite;
+}
+
+.slide-track-2 {
+  animation: scroll 25s linear infinite;
+}
+
+.slide-track-3 {
+  animation: scroll 35s linear infinite;
 }

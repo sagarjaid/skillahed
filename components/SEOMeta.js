@@ -31,7 +31,7 @@ const SEOMeta = (props) => {
 
       <meta
         name="google-site-verification"
-        content="Yp9e-xgEgjFSdaOwKgO0bv66QN5ScCpFxlGr0F8qUWk"
+        content="eOAAT8a829VDP-xyjZDHDe9iwtv2R0A8eUpzE75L8G0"
       />
     </Head>
   );
