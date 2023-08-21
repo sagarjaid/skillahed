@@ -39,7 +39,7 @@ const index = () => {
         <section className=''>
           <img
             src='/digital-marketing-courses-2.png'
-            className='w-full rounded-xl'
+            className='w-full rounded-2xl shadow-xl '
           />
         </section>
         <section className='flex flex-col text-center items-center py-4 text-base font-extrabold xs:text-xl sdm:text-3xl sm:gap-3 md:text-4xl mdx:text-4xl '>
@@ -48,233 +48,178 @@ const index = () => {
             24+ Modules <sapn className='line-through'>₹30,999</sapn> Now only
             at ₹24,999
           </div>
-
-
         </section>
 
-        <div className='md:text-xl font-extabold'>
-          You will be learning...
-        </div>
+        <div className='md:text-xl font-extabold'>You will be learning...</div>
 
         <div className='flex gap-4 justify-center flex-wrap'>
           <Card
-
-            name="Digital Marketing Fundamentals"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Digital Marketing Fundamentals'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/digital-marketing-fundamentals.png'
           />
           <Card
-
-            name="Search Engine Optimization (SE0)"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Search Engine Optimization (SE0)'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/seo.png'
           />
 
           <Card
-
-            name="Google Search Console"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Google Search Console'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/gsc.png'
           />
 
           <Card
-
-            name="WordPress Website/Blog"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='WordPress Website/Blog'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/wordpress.png'
           />
           <Card
-
-            name="Google Analytics (GA4)"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Google Analytics (GA4)'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/google-analytics.png'
           />
           <Card
-
-            name="Media Planning & Buying"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Media Planning & Buying'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/media-planing.png'
           />
           <Card
-
-            name="Google Ads (PPC)"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Google Ads (PPC)'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/google-ads.png'
           />
           <Card
-
-            name="Google Re-marketing Ads"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Google Re-marketing Ads'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/remarketing.png'
           />
           <Card
-
-            name="E-commerce Marketing"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='E-commerce Marketing'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/ecommerce-marketing.png'
           />
           <Card
-
-            name="Video/ YouTube Ads"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Video/ YouTube Ads'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/youtube-ads.png'
           />
           <Card
-
-            name="Mobile App Marketing"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Mobile App Marketing'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/mobile-app-marketing.png'
           />
           <Card
-
-            name="Social Media Marketing"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Social Media Marketing'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/social-media-marketing.png'
           />
 
           <Card
-
-            name="Lead Generation"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Lead Generation'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/lead-generation.png'
           />
           <Card
-
-            name="Facebook Ads"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Facebook Ads'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/facebook-ads.png'
           />
           <Card
-
-            name="Instagram Ads"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Instagram Ads'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/instagram-ads.png'
           />
           <Card
-
-            name="Social Media Management"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Social Media Management'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/social-media-management.png'
           />
 
           <Card
-
-            name="Viral Marketing"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
-          />
-
-
-          <Card
-
-            name="AI for digital marketers"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
-          />
-          <Card
-
-            name="Content Marketing"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
-          />
-          <Card
-
-            name="Canva Basics"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Viral Marketing'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/viral-marketing.png'
           />
 
           <Card
-
-            name="Email Marketing"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='AI for digital marketers'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/ai.png'
+          />
+          <Card
+            name='Content Marketing'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/content-marketing.png'
+          />
+          <Card
+            name='Canva Basics'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/canva.png'
           />
 
           <Card
-
-            name="WhatsApp Marketing"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Email Marketing'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/email-marketing.png'
           />
 
           <Card
-
-            name="Online Reputation Management ORM"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='WhatsApp Marketing'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/whatsapp-marketing.png'
           />
 
           <Card
-
-            name="Google Adsense"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Online Reputation Management ORM'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/orm.png'
           />
 
           <Card
-
-            name="Blogging"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
-          />
-
-
-          <Card
-
-            name="Affiliate Marketing"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
-          />
-
-
-
-
-
-
-          <Card
-
-            name="Freelancing"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Google Adsense'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/g-adsense.png'
           />
 
           <Card
-
-            name="Digital Marketing Strategy"
-            description="Digital Marketing Fundamentals and Overview of all digital marketing & Modules"
-
+            name='Blogging'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/blogging.png'
           />
 
+          <Card
+            name='Affiliate Marketing'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/affiliate-marketing.png'
+          />
+
+          <Card
+            name='Freelancing'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/freelancing.png'
+          />
+
+          <Card
+            name='Digital Marketing Strategy'
+            description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+            imgUrl='/dm-strategy.png'
+          />
         </div>
-
       </div>
 
-      <div>
-
-      </div>
-
-
+      <div></div>
 
       <div className='m-auto max-w-6xl flex flex-col gap-20 mb-20 justify-center items-center p-4'>
         <section className='flex flex-col gap-10 justify-center items-center'>
           <div className='text-7xl font-extrabold text-orange-500'>&</div>
           <div className='flex flex-col mdx:flex-row gap-3 justify-center items-center text-white'>
-            <div className='w-[250px] h-[400px] bg-orange-500 flex flex-col gap-6 justify-center items-center text-xl rounded-xl font-semibold shadow-md hover:shadow-xl'>
-              <svg
-                fill='none'
-                className='w-20 h-20'
-                stroke='currentColor'
-                strokeWidth={1.5}
-                viewBox='0 0 24 24'
-                xmlns='http://www.w3.org/2000/svg'
-                aria-hidden='true'>
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25'
-                />
-              </svg>
+            <div className='w-[250px] h-[400px] bg-orange-500 flex flex-col gap-6 justify-center items-center text-xl rounded-xl font-semibold shadow-md hover:shadow-xl cursor-pointer'>
+              <img
+                src='/live-project.png'
+                className='w-20'
+              />
 
               <div>Live Project Website</div>
               <div>+</div>
@@ -284,21 +229,11 @@ const index = () => {
             </div>
             <div className='text-7xl font-extrabold text-gray-600'>+</div>
 
-            <div className='w-[250px] h-[400px] bg-orange-500 flex flex-col gap-6 justify-center items-center text-xl rounded-xl font-semibold shadow-md hover:shadow-xl'>
-              <svg
-                fill='none'
-                className='w-20 h-20'
-                stroke='currentColor'
-                strokeWidth={1.5}
-                viewBox='0 0 24 24'
-                xmlns='http://www.w3.org/2000/svg'
-                aria-hidden='true'>
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M12 3.75v16.5M2.25 12h19.5M6.375 17.25a4.875 4.875 0 004.875-4.875V12m6.375 5.25a4.875 4.875 0 01-4.875-4.875V12m-9 8.25h16.5a1.5 1.5 0 001.5-1.5V5.25a1.5 1.5 0 00-1.5-1.5H3.75a1.5 1.5 0 00-1.5 1.5v13.5a1.5 1.5 0 001.5 1.5zm12.621-9.44c-1.409 1.41-4.242 1.061-4.242 1.061s-.349-2.833 1.06-4.242a2.25 2.25 0 013.182 3.182zM10.773 7.63c1.409 1.409 1.06 4.242 1.06 4.242S9 12.22 7.592 10.811a2.25 2.25 0 113.182-3.182z'
-                />
-              </svg>
+            <div className='w-[250px] h-[400px] bg-orange-500 flex flex-col gap-6 justify-center items-center text-xl rounded-xl font-semibold shadow-md hover:shadow-xl cursor-pointer'>
+              <img
+                src='/certificate-2.png'
+                className='w-20'
+              />
               <div>Google</div>
               <div>+</div>
               <div>Meta</div>
@@ -308,21 +243,11 @@ const index = () => {
 
             <div className='text-7xl font-extrabold text-gray-600'>+</div>
 
-            <div className='w-[250px] h-[400px] bg-orange-500 flex flex-col gap-6 justify-center items-center text-xl rounded-xl font-semibold shadow-md hover:shadow-xl'>
-              <svg
-                fill='none'
-                className='w-20 h-20'
-                stroke='currentColor'
-                strokeWidth={1.5}
-                viewBox='0 0 24 24'
-                xmlns='http://www.w3.org/2000/svg'
-                aria-hidden='true'>
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z'
-                />
-              </svg>
+            <div className='w-[250px] h-[400px] bg-orange-500 flex flex-col gap-6 justify-center items-center text-xl rounded-xl font-semibold shadow-md hover:shadow-xl cursor-pointer'>
+              <img
+                src='/intern.png'
+                className='w-20'
+              />
 
               <div>Internship</div>
               <div>+</div>
@@ -331,14 +256,14 @@ const index = () => {
               <div>Placement Cell</div>
             </div>
           </div>
-        </section >
+        </section>
 
         <section className='flex flex-col text-center items-center py-4 gap-10 '>
           <div className='text-base font-extrabold xs:text-xl sdm:text-3xl  md:text-4xl mdx:text-4xl '>
-            Certificates form Hyperlink School <br />Google & Meta
+            Certificates form Hyperlink School <br />
+            Google & Meta
           </div>
           <div className='w-full flex flex-col gap-5 md:flex-row'>
-
             <img
               src='/hyperschool-certificate-2.png'
               className='w-full md:w-1/2 h-full  shadow-xl'
@@ -449,8 +374,8 @@ const index = () => {
             <div className='text-base'>call us: +918898720799</div>
           </div>
         </div>
-      </div >
-      <div className='relative overflow-x-hidden w-full flex-col justify-end gap-2 bg-gradient-to-t from-white via-orange-400 to-white px-2 flex'>
+      </div>
+      {/* <div className='relative overflow-x-hidden w-full flex-col justify-end gap-2 bg-gradient-to-t from-white via-orange-400 to-white px-2 flex'>
         <div className='slide-track  flex-row gap-2 bg-transparent flex'>
           <HeroCard
             name='SEO'
@@ -733,7 +658,7 @@ const index = () => {
             styles='w-52 h-52 bg-transparent'
           />
         </div>
-      </div>
+      </div> */}
       <Footer />
     </>
   );
