@@ -1,14 +1,13 @@
 const Card = (props) => {
   const { name, description, imgUrl } = props;
   return (
-    <div className='flex  sdm:min-w-[250px] sdm:min-h-[200px]  sdm:max-w-[250px] flex-col justify-center gap-2 rounded-2xl  sdm:border border-blue-200 bg-white p-3'>
+    <div className='flex  sdm:min-w-[250px] sdm:min-h-[200px]  sdm:max-w-[250px] flex-col justify-center gap-2 rounded-2xl  sdm:border border-gray-600 bg-white p-3'>
       <span>
         {imgUrl ? (
           <img
             src={imgUrl}
             className='mb-2  h-7 w-7  sdm:h-9 sdm:w-9 '
-          // className='mb-2  h-7 w-7  sdm:h-9 sdm:w-9 rounded-full bg-gray-700 p-2'
-
+            // className='mb-2  h-7 w-7  sdm:h-9 sdm:w-9 rounded-full bg-gray-700 p-2'
           />
         ) : (
           <svg

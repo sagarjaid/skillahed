@@ -15,9 +15,9 @@ const index = () => {
           <div className='flex gap-6'>
             <img
               src='/google-partner.png'
-              className=' w-[100px] border rounded-sm'
+              className=' w-[100px] border rounded-md shadow-sm'
             />
-            <div className='hidden md:flex cursor-pointer items-center gap-1 justify-around  rounded-full bg-orange-500 p-2.5 px-4 text-white'>
+            <div className='hidden md:flex cursor-pointer items-center gap-1 justify-around  rounded-full bg-black p-2.5 px-4 text-white shadow-md'>
               <span className='text-xs font-bold'>Apply Now</span>
               <svg
                 className='w-4'
@@ -39,7 +39,11 @@ const index = () => {
         <section className=''>
           <img
             src='/digital-marketing-courses-2.png'
-            className='w-full rounded-2xl shadow-xl '
+            className='hidden md:block w-full rounded-2xl shadow-xl '
+          />
+          <img
+            src='/digital-marketing-courses-3.png'
+            className='md:hidden w-full rounded-2xl shadow-xl '
           />
         </section>
         <section className='flex flex-col text-center items-center py-4 text-base font-extrabold xs:text-xl sdm:text-3xl sm:gap-3 md:text-4xl mdx:text-4xl '>
@@ -211,7 +215,7 @@ const index = () => {
 
       <div></div>
 
-      <div className='m-auto max-w-6xl flex flex-col gap-20 mb-20 justify-center items-center p-4'>
+      <div className='m-auto max-w-6xl flex flex-col gap-20 justify-center items-center p-4'>
         <section className='flex flex-col gap-10 justify-center items-center'>
           <div className='text-7xl font-extrabold text-orange-500'>&</div>
           <div className='flex flex-col mdx:flex-row gap-3 justify-center items-center text-white'>
@@ -234,11 +238,11 @@ const index = () => {
                 src='/certificate-2.png'
                 className='w-20'
               />
-              <div>Google</div>
+              <div>Google Certificate</div>
               <div>+</div>
-              <div>Meta</div>
+              <div>hyperlink Certificate</div>
               <div>+</div>
-              <div>hyperlink</div>
+              <div>Meta Certificate</div>
             </div>
 
             <div className='text-7xl font-extrabold text-gray-600'>+</div>
@@ -355,11 +359,11 @@ const index = () => {
               </svg>
             </div>
             <div className='text-[9px] text-gray-400'>
-              by signing up you acknowledge to be a part of close early beta of
-              product which may contain bugs.
+              by submiting this form you're are accepting our privacy policy and
+              terms and conditions
             </div>
           </div>
-          <div className='flex flex-col md:w-1/2 bg-orange-500 text-white text-4xl gap-20 p-4 py-10 justify-center items-center'>
+          <div className='hidden md:flex flex-col md:w-1/2 bg-orange-500 text-white text-4xl gap-20 p-4 py-10 justify-center items-center'>
             <img
               src='/hyperlink-logo-2.png'
               className='w-[250px]'
@@ -373,6 +377,20 @@ const index = () => {
 
             <div className='text-base'>call us: +918898720799</div>
           </div>
+        </div>
+        <div className='flex md:hidden flex-col w-full bg-orange-500 text-white rounded-xl text-4xl gap-20 p-4 py-10 justify-center items-center'>
+          <img
+            src='/hyperlink-logo-2.png'
+            className='w-[250px]'
+          />
+
+          <div className='flex flex-col justify-center items-center gap-4'>
+            <div className='line-through'>Yesterday</div>
+            <div className='text-9xl font-bold'>Now</div>
+            <div className='line-through'>Tomorrow</div>
+          </div>
+
+          <div className='text-base'>call us: +918898720799</div>
         </div>
       </div>
       {/* <div className='relative overflow-x-hidden w-full flex-col justify-end gap-2 bg-gradient-to-t from-white via-orange-400 to-white px-2 flex'>
