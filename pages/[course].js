@@ -13,35 +13,7 @@ const locationPage = ({ text, url }) => {
         slug={url}
       />
       <div className='m-auto max-w-6xl flex flex-col gap-20  justify-center items-center p-4'>
-        <nav className='w-full flex justify-between items-center py-3 sticky top-0 bg-white'>
-          <img
-            src='/hyperlink-logo.png'
-            className='w-[180px] sdm:w-[250px]'
-          />
-          <div className='flex gap-6'>
-            <img
-              src='/google-partner.png'
-              className='hidden  md:block w-[100px] border rounded-md shadow-sm'
-            />
-            <div className='flex cursor-pointer items-center gap-1 justify-around  rounded-md bg-orange-500 hover:bg-orange-600 p-2.5 px-4 text-white shadow-sm'>
-              <span className='text-xs font-bold'>Apply Now</span>
-              <svg
-                className='w-4'
-                fill='none'
-                stroke='currentColor'
-                strokeWidth={1.5}
-                viewBox='0 0 24 24'
-                xmlns='http://www.w3.org/2000/svg'
-                aria-hidden='true'>
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75'
-                />
-              </svg>
-            </div>
-          </div>
-        </nav>
+        <Nav />
 
         <div className='flex flex-col justify-center items-center gap-10 w-full  -mt-16'>
           <section className=''>
@@ -62,7 +34,7 @@ const locationPage = ({ text, url }) => {
               at ₹24,999
             </h2>
 
-            <div className='text-xl font-semibold'>You will be learning...</div>
+            <div className='text-lg font-normal'>You will be learning...</div>
           </section>
 
           <div className='flex gap-4 justify-center -mt-6 flex-wrap'>

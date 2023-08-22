@@ -1,27 +1,28 @@
 import React from 'react';
 import Footer from '@/components/Footer';
 import SEOMeta from '@/components/SEOMeta';
-
+import Nav from '@/components/Nav';
 
 const GDPR = () => {
   return (
     <>
       <SEOMeta
-        title="GDPR Policy — Hyperlink School"
-        description="10X faster & better way to write viral 30 sec short video script for Instagram Reel, TikTok and Youtube shorts"
-        slug="gdrp"
+        title='GDPR Policy — Hyperlink School'
+        description='10X faster & better way to write viral 30 sec short video script for Instagram Reel, TikTok and Youtube shorts'
+        slug='gdrp'
       />
-      <main className="m-auto flex max-w-5xl flex-col">
-        <div className="flex flex-col items-start justify-center gap-6 px-4 py-10 ">
-          <div className="flex flex-col gap-2 text-2xl font-medium">
+      <main className='m-auto flex max-w-5xl flex-col'>
+        <Nav />
+        <div className='flex flex-col items-start justify-center gap-6 px-4 py-10 '>
+          <div className='flex flex-col gap-2 text-2xl font-medium'>
             GDPR Policy
-            <div className="text-sm">Updated on 1 September, 2023</div>
+            <div className='text-sm'>Updated on 1 September, 2023</div>
           </div>
           <p>
-            At Hyperlink School, accessible from https://hyperlinkschool.com/, one of our main
-            priorities is the privacy of our visitors. This Privacy Policy
-            document contains types of information that is collected and
-            recorded by Hyperlink School and how we use it.
+            At Hyperlink School, accessible from https://hyperlinkschool.com/,
+            one of our main priorities is the privacy of our visitors. This
+            Privacy Policy document contains types of information that is
+            collected and recorded by Hyperlink School and how we use it.
           </p>
 
           <h2>General Data Protection Regulation (GDPR)</h2>
@@ -37,18 +38,18 @@ const GDPR = () => {
             <li>Hyperlink School needs to perform a contract with you</li>
             <li>You have given Hyperlink School permission to do so</li>
             <li>
-              Processing your personal information is in Hyperlink School legitimate
-              interests
+              Processing your personal information is in Hyperlink School
+              legitimate interests
             </li>
             <li>Hyperlink School needs to comply with the law</li>
           </ul>
 
           <p>
-            Hyperlink School will retain your personal information only for as long as
-            is necessary for the purposes set out in this Privacy Policy. We
-            will retain and use your information to the extent necessary to
-            comply with our legal obligations, resolve disputes, and enforce our
-            policies.
+            Hyperlink School will retain your personal information only for as
+            long as is necessary for the purposes set out in this Privacy
+            Policy. We will retain and use your information to the extent
+            necessary to comply with our legal obligations, resolve disputes,
+            and enforce our policies.
           </p>
 
           <p>
@@ -76,12 +77,12 @@ const GDPR = () => {
           <h2>Cookies and Web Beacons</h2>
 
           <p>
-            Like any other website, Hyperlink School uses "cookies". These cookies are
-            used to store information including visitors' preferences, and the
-            pages on the website that the visitor accessed or visited. The
-            information is used to optimize the users' experience by customizing
-            our web page content based on visitors' browser type and/or other
-            information.
+            Like any other website, Hyperlink School uses "cookies". These
+            cookies are used to store information including visitors'
+            preferences, and the pages on the website that the visitor accessed
+            or visited. The information is used to optimize the users'
+            experience by customizing our web page content based on visitors'
+            browser type and/or other information.
           </p>
 
           <h2>Google DoubleClick DART Cookie</h2>
@@ -93,7 +94,7 @@ const GDPR = () => {
             internet. However, visitors may choose to decline the use of DART
             cookies by visiting the Google ad and content network Privacy Policy
             at the following URL –{' '}
-            <a href="https://policies.google.com/technologies/ads">
+            <a href='https://policies.google.com/technologies/ads'>
               https://policies.google.com/technologies/ads
             </a>
           </p>
@@ -112,7 +113,7 @@ const GDPR = () => {
             <li>
               <p>Google</p>
               <p>
-                <a href="https://policies.google.com/technologies/ads">
+                <a href='https://policies.google.com/technologies/ads'>
                   https://policies.google.com/technologies/ads
                 </a>
               </p>
@@ -129,27 +130,27 @@ const GDPR = () => {
           <p>
             Third-party ad servers or ad networks uses technologies like
             cookies, JavaScript, or Web Beacons that are used in their
-            respective advertisements and links that appear on Hyperlink School, which
-            are sent directly to users' browser. They automatically receive your
-            IP address when this occurs. These technologies are used to measure
-            the effectiveness of their advertising campaigns and/or to
-            personalize the advertising content that you see on websites that
-            you visit.
+            respective advertisements and links that appear on Hyperlink School,
+            which are sent directly to users' browser. They automatically
+            receive your IP address when this occurs. These technologies are
+            used to measure the effectiveness of their advertising campaigns
+            and/or to personalize the advertising content that you see on
+            websites that you visit.
           </p>
 
           <p>
-            Note that Hyperlink School has no access to or control over these cookies
-            that are used by third-party advertisers.
+            Note that Hyperlink School has no access to or control over these
+            cookies that are used by third-party advertisers.
           </p>
 
           <h2>Third Party Privacy Policies</h2>
 
           <p>
-            Hyperlink School's Privacy Policy does not apply to other advertisers or
-            websites. Thus, we are advising you to consult the respective
-            Privacy Policies of these third-party ad servers for more detailed
-            information. It may include their practices and instructions about
-            how to opt-out of certain options.{' '}
+            Hyperlink School's Privacy Policy does not apply to other
+            advertisers or websites. Thus, we are advising you to consult the
+            respective Privacy Policies of these third-party ad servers for more
+            detailed information. It may include their practices and
+            instructions about how to opt-out of certain options.{' '}
           </p>
 
           <p>
@@ -168,11 +169,12 @@ const GDPR = () => {
           </p>
 
           <p>
-            Hyperlink School does not knowingly collect any Personal Identifiable
-            Information from children under the age of 13. If you think that
-            your child provided this kind of information on our website, we
-            strongly encourage you to contact us immediately and we will do our
-            best efforts to promptly remove such information from our records.
+            Hyperlink School does not knowingly collect any Personal
+            Identifiable Information from children under the age of 13. If you
+            think that your child provided this kind of information on our
+            website, we strongly encourage you to contact us immediately and we
+            will do our best efforts to promptly remove such information from
+            our records.
           </p>
 
           <h2>Online Privacy Policy Only</h2>
@@ -180,8 +182,8 @@ const GDPR = () => {
           <p>
             Our Privacy Policy applies only to our online activities and is
             valid for visitors to our website with regards to the information
-            that they shared and/or collect in Hyperlink School. This policy is not
-            applicable to any information collected offline or via channels
+            that they shared and/or collect in Hyperlink School. This policy is
+            not applicable to any information collected offline or via channels
             other than this website.
           </p>
 

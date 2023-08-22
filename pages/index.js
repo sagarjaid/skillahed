@@ -1,46 +1,80 @@
 import Card from '@/components/Card';
 import Footer from '@/components/Footer';
-import HeroCard from '@/components/HeroCard';
-import SEOMeta from '@/components/SEOMeta';
-import React from 'react';
+import Nav from '@/components/Nav';
+import Head from 'next/head';
 
 const index = () => {
   return (
     <>
-      <SEOMeta
-        title='Hyperlink School - Digital Marketing course in Mumbai'
-        description='Best digital marketing course in mumbai with placemnet, fees: 24,999/- only'
-      />
+      <Head>
+        <title>Hyperlink School - Digital Marketing course in Mumbai</title>
+        <meta
+          name='title'
+          content='Hyperlink School - Digital Marketing course in Mumbai'
+        />
+        <meta
+          name='description'
+          content='Best digital marketing course in mumbai with placemnet, fees: 24,999/- only'
+        />
+        <link
+          rel='canonical'
+          href='https://hyperlinkschool.com'
+        />
+
+        <meta
+          property='og:type'
+          content='website'
+        />
+        <meta
+          property='og:url'
+          content='https://hyperlinkschool.com'
+        />
+        <meta
+          property='og:title'
+          content='Hyperlink School - Digital Marketing course in Mumbai'
+        />
+        <meta
+          property='og:description'
+          content='Best digital marketing course in mumbai with placemnet, fees: 24,999/- only'
+        />
+        <meta
+          property='og:image'
+          content='https://hyperlinkschool.com/digital-marketing-social.png'
+        />
+
+        <meta
+          property='twitter:card'
+          content='summary_large_image'
+        />
+        <meta
+          property='twitter:url'
+          content='https://hyperlinkschool.com'
+        />
+        <meta
+          property='twitter:title'
+          content='Hyperlink School - Digital Marketing course in Mumbai'
+        />
+        <meta
+          property='twitter:description'
+          content='Best digital marketing course in mumbai with placemnet, fees: 24,999/- only'
+        />
+        <meta
+          property='twitter:image'
+          content='https://hyperlinkschool.com/digital-marketing-social.png'
+        />
+        <link
+          rel='icon'
+          href='https://hyperlinkschool.com/favicon.png'
+        />
+
+        <meta
+          name='google-site-verification'
+          content='eOAAT8a829VDP-xyjZDHDe9iwtv2R0A8eUpzE75L8G0'
+        />
+      </Head>
+
       <div className='m-auto max-w-6xl flex flex-col gap-20  justify-center items-center p-4'>
-        <nav className='w-full flex justify-between items-center py-3 sticky top-0 bg-white'>
-          <img
-            src='/hyperlink-logo.png'
-            className='w-[180px] sdm:w-[250px]'
-          />
-          <div className='flex gap-6'>
-            <img
-              src='/google-partner.png'
-              className='hidden  md:block w-[100px] border rounded-md shadow-sm'
-            />
-            <div className='flex cursor-pointer items-center gap-1 justify-around  rounded-md bg-orange-500 hover:bg-orange-600 p-2.5 px-4 text-white shadow-sm'>
-              <span className='text-xs font-bold'>Apply Now</span>
-              <svg
-                className='w-4'
-                fill='none'
-                stroke='currentColor'
-                strokeWidth={1.5}
-                viewBox='0 0 24 24'
-                xmlns='http://www.w3.org/2000/svg'
-                aria-hidden='true'>
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75'
-                />
-              </svg>
-            </div>
-          </div>
-        </nav>
+        <Nav />
 
         <div className='flex flex-col justify-center items-center gap-10 w-full  -mt-16'>
           <section className=''>
@@ -53,6 +87,7 @@ const index = () => {
               className='md:hidden w-full rounded-2xl shadow-xl '
             />
           </section>
+
           <section className='flex flex-col text-center items-center py-4 text-base font-extrabold xs:text-xl sdm:text-3xl gap-4 md:text-4xl mdx:text-4xl '>
             <h1>Digital Marketing Courses in Mumbai</h1>
             <h2 className='md:text-xl text-orange-500'>
@@ -60,7 +95,7 @@ const index = () => {
               at ₹24,999
             </h2>
 
-            <div className='text-xl font-semibold'>You will be learning...</div>
+            <div className='text-lg font-normal'>You will be learning...</div>
           </section>
 
           <div className='flex gap-4 justify-center -mt-6 flex-wrap'>

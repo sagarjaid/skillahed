@@ -1,34 +1,34 @@
 import React from 'react';
 import Footer from '@/components/Footer';
 import SEOMeta from '@/components/SEOMeta';
-
+import Nav from '@/components/Nav';
 
 const TC = () => {
   return (
     <>
       <SEOMeta
-        title="Terms and Conditions — Hyperlink School"
-        description="10X faster & better way to write viral 30 sec short video script for Instagram Reel, TikTok and Youtube shorts"
-        slug="tc"
+        title='Terms and Conditions — Hyperlink School'
+        description='10X faster & better way to write viral 30 sec short video script for Instagram Reel, TikTok and Youtube shorts'
+        slug='tc'
       />
 
-      <main className="m-auto flex max-w-5xl flex-col px-4">
-
-        <div className="flex flex-col items-start justify-center gap-6 px-4 py-10 ">
-          <div className="flex flex-col gap-2 text-2xl font-medium">
+      <main className='m-auto flex max-w-5xl flex-col px-4'>
+        <Nav />
+        <div className='flex flex-col items-start justify-center gap-6 px-4 py-10 '>
+          <div className='flex flex-col gap-2 text-2xl font-medium'>
             Terms and Conditions
-            <div className="text-sm">Updated on 1 September, 2023</div>
+            <div className='text-sm'>Updated on 1 September, 2023</div>
           </div>
           <p>
-            Welcome to Hyperlink School! .These terms and conditions outline the rules
-            and regulations for the use of Hyperlink School's Website, located at
-            https://hyperlinkschool.com/.
+            Welcome to Hyperlink School! .These terms and conditions outline the
+            rules and regulations for the use of Hyperlink School's Website,
+            located at https://hyperlinkschool.com/.
           </p>
 
           <p>
             By accessing this website we assume you accept these terms and
-            conditions. Do not continue to use Hyperlink School if you do not agree to
-            take all of the terms and conditions stated on this page.
+            conditions. Do not continue to use Hyperlink School if you do not
+            agree to take all of the terms and conditions stated on this page.
           </p>
 
           <p>
@@ -54,8 +54,9 @@ const TC = () => {
           </h3>
 
           <p>
-            We employ the use of cookies. By accessing Hyperlink School, you agreed to
-            use cookies in agreement with the Hyperlink School's Privacy Policy.
+            We employ the use of cookies. By accessing Hyperlink School, you
+            agreed to use cookies in agreement with the Hyperlink School's
+            Privacy Policy.
           </p>
 
           <p>
@@ -71,11 +72,11 @@ const TC = () => {
           </h3>
 
           <p>
-            Unless otherwise stated, Hyperlink School and/or its licensors own the
-            intellectual property rights for all material on Hyperlink School. All
-            intellectual property rights are reserved. You may access this from
-            Hyperlink School for your own personal use subjected to restrictions set in
-            these terms and conditions.
+            Unless otherwise stated, Hyperlink School and/or its licensors own
+            the intellectual property rights for all material on Hyperlink
+            School. All intellectual property rights are reserved. You may
+            access this from Hyperlink School for your own personal use
+            subjected to restrictions set in these terms and conditions.
           </p>
 
           <p>You must not:</p>
@@ -91,14 +92,15 @@ const TC = () => {
           <p>
             Parts of this website offer an opportunity for users to post and
             exchange opinions and information in certain areas of the website.
-            Hyperlink School does not filter, edit, publish or review Comments prior to
-            their presence on the website. Comments do not reflect the views and
-            opinions of Hyperlink School,its agents and/or affiliates. Comments reflect
-            the views and opinions of the person who post their views and
-            opinions. To the extent permitted by applicable laws, Hyperlink School shall
-            not be liable for the Comments or for any liability, damages or
-            expenses caused and/or suffered as a result of any use of and/or
-            posting of and/or appearance of the Comments on this website.
+            Hyperlink School does not filter, edit, publish or review Comments
+            prior to their presence on the website. Comments do not reflect the
+            views and opinions of Hyperlink School,its agents and/or affiliates.
+            Comments reflect the views and opinions of the person who post their
+            views and opinions. To the extent permitted by applicable laws,
+            Hyperlink School shall not be liable for the Comments or for any
+            liability, damages or expenses caused and/or suffered as a result of
+            any use of and/or posting of and/or appearance of the Comments on
+            this website.
           </p>
 
           <p>You warrant and represent that:</p>
@@ -125,9 +127,9 @@ const TC = () => {
           </ul>
 
           <p>
-            You hereby grant Hyperlink School a non-exclusive license to use, reproduce,
-            edit and authorize others to use, reproduce and edit any of your
-            Comments in any and all forms, formats or media.
+            You hereby grant Hyperlink School a non-exclusive license to use,
+            reproduce, edit and authorize others to use, reproduce and edit any
+            of your Comments in any and all forms, formats or media.
           </p>
 
           <h3>
@@ -185,8 +187,9 @@ const TC = () => {
             that: (a) the link would not make us look unfavorably to ourselves
             or to our accredited businesses; (b) the organization does not have
             any negative records with us; (c) the benefit to us from the
-            visibility of the hyperlink compensates the absence of Hyperlink School; and
-            (d) the link is in the context of general resource information.
+            visibility of the hyperlink compensates the absence of Hyperlink
+            School; and (d) the link is in the context of general resource
+            information.
           </p>
 
           <p>
@@ -200,9 +203,9 @@ const TC = () => {
           <p>
             If you are one of the organizations listed in paragraph 2 above and
             are interested in linking to our website, you must inform us by
-            sending an e-mail to Hyperlink School. Please include your name, your
-            organization name, contact information as well as the URL of your
-            site, a list of any URLs from which you intend to link to our
+            sending an e-mail to Hyperlink School. Please include your name,
+            your organization name, contact information as well as the URL of
+            your site, a list of any URLs from which you intend to link to our
             Website, and a list of the URLs on our site to which you would like
             to link. Wait 2-3 weeks for a response.
           </p>
@@ -220,8 +223,8 @@ const TC = () => {
           </ul>
 
           <p>
-            No use of Hyperlink School's logo or other artwork will be allowed for
-            linking absent a trademark license agreement.
+            No use of Hyperlink School's logo or other artwork will be allowed
+            for linking absent a trademark license agreement.
           </p>
 
           <h3>

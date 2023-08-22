@@ -4,9 +4,16 @@ const Footer = () => {
   return (
     <div className='flex justify-center gap-2 py-10 text-xs'>
       <a
-        href=''
+        href='https://hyperlinkschool.com/links'
         target='_blank'>
-        Copyright 2023 - hyperlink school
+        Digital Marketing Courses
+      </a>
+      <span>|</span>
+
+      <a
+        href='https://hyperlinkschool.com/sitemap.xml'
+        target='_blank'>
+        Sitemap
       </a>
       <span>|</span>
 
