@@ -53,19 +53,17 @@ const index = () => {
               className='md:hidden w-full rounded-2xl shadow-xl '
             />
           </section>
-          <section className='flex flex-col text-center items-center py-4 text-base font-extrabold xs:text-xl sdm:text-3xl sm:gap-3 md:text-4xl mdx:text-4xl '>
+          <section className='flex flex-col text-center items-center py-4 text-base font-extrabold xs:text-xl sdm:text-3xl gap-4 md:text-4xl mdx:text-4xl '>
             <h1>Digital Marketing Courses in Mumbai</h1>
-            <div className='md:text-xl text-orange-500'>
+            <h2 className='md:text-xl text-orange-500'>
               24+ Modules <sapn className='line-through'>₹30,999</sapn> Now only
               at ₹24,999
-            </div>
+            </h2>
+
+            <div className='text-xl font-semibold'>You will be learning...</div>
           </section>
 
-          <div className='md:text-xl font-extabold'>
-            You will be learning...
-          </div>
-
-          <div className='flex gap-4 justify-center flex-wrap'>
+          <div className='flex gap-4 justify-center -mt-6 flex-wrap'>
             <Card
               name='Digital Marketing Fundamentals'
               description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
@@ -287,11 +285,11 @@ const index = () => {
 
         <section className='flex flex-col text-center items-center py-4 gap-10 '>
           <div className='text-base font-extrabold xs:text-xl sdm:text-3xl  md:text-4xl mdx:text-4xl '>
-            Internship, Placement & Job partners
+            Internship & Placement partners
           </div>
           <img
             src='/digital-marketing-placement.png'
-            className='w-2/3'
+            className='w-full sdm:w-1/2'
           />
         </section>
 
@@ -413,290 +411,6 @@ const index = () => {
           </div>
         </div>
       </div>
-      {/* <div className='relative overflow-x-hidden w-full flex-col justify-end gap-2 bg-gradient-to-t from-white via-orange-400 to-white px-2 flex'>
-        <div className='slide-track  flex-row gap-2 bg-transparent flex'>
-          <HeroCard
-            name='SEO'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='PPC'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='SMM'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Facebook Ads'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Google Ads'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='ORM'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Digital Marketer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Graphic Designer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Data Scientist'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Business Analyst'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Network Engineer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Fashion Designer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Financial Analyst'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Air Hostess'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Project Manager'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Civil Engineer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Web Designer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Dentist'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Astronaut'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Math Teacher'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Youtuber'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Software Engineer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Digital Marketer'
-            styles='w-52 h-52 bg-transparent'
-          />
-        </div>
-        <div className='slide-track-2 flex-row gap-2 bg-transparent flex'>
-          <HeroCard
-            name='Web Designer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Dentist'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Astronaut'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Math Teacher'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Youtuber'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Software Engineer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Digital Marketer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Graphic Designer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Data Scientist'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Business Analyst'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Network Engineer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Fashion Designer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Financial Analyst'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Air Hostess'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Project Manager'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Civil Engineer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Web Designer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Dentist'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Astronaut'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Math Teacher'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Youtuber'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Software Engineer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Digital Marketer'
-            styles='w-52 h-52 bg-transparent'
-          />
-        </div>
-        <div className='slide-track-3 flex-row gap-2 bg-transparent flex'>
-          <HeroCard
-            name='Web Designer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Dentist'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Astronaut'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Math Teacher'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Youtuber'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Software Engineer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Digital Marketer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Graphic Designer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Data Scientist'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Business Analyst'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Network Engineer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Fashion Designer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Financial Analyst'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Air Hostess'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Project Manager'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Civil Engineer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Web Designer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Dentist'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Astronaut'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Math Teacher'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Youtuber'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Software Engineer'
-            styles='w-52 h-52 bg-transparent'
-          />
-          <HeroCard
-            name='Digital Marketer'
-            styles='w-52 h-52 bg-transparent'
-          />
-        </div>
-      </div> */}
       <Footer />
     </>
   );

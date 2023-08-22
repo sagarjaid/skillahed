@@ -6,7 +6,7 @@ const Card = (props) => {
         {imgUrl ? (
           <img
             src={imgUrl}
-            className='mb-2  h-9 w-9 '
+            className='mb-2  h-10 w-10 '
           />
         ) : (
           <svg
