@@ -3,6 +3,7 @@ import all from '@/components/india.json';
 import SEOMeta from '@/components/SEOMeta';
 import Card from '@/components/Card';
 import Footer from '@/components/Footer';
+import Nav from '@/components/Nav';
 
 const locationPage = ({ text, url }) => {
   return (
