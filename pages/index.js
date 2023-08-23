@@ -1,9 +1,25 @@
 import Card from '@/components/Card';
 import Footer from '@/components/Footer';
 import Nav from '@/components/Nav';
+import PopUp from '@/components/PopUp';
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
 
 const index = () => {
+
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+      setToggle(!toggle);
+  };
+
+  useEffect(() => {
+      const timeoutId = setTimeout(() => {
+          setToggle(true);
+      }, 1200);
+      return () => clearTimeout(timeoutId);
+    }, []);
+
   return (
     <>
       <Head>
@@ -74,7 +90,7 @@ const index = () => {
       </Head>
 
       <div className='m-auto max-w-6xl flex flex-col gap-20  justify-center items-center p-4'>
-        <Nav />
+        <Nav handleToggle={handleToggle} toggle={toggle} />
 
         <div className='flex flex-col justify-center items-center gap-10 w-full  -mt-16'>
           <section className=''>
@@ -368,7 +384,7 @@ const index = () => {
                 <input
                   value=''
                   type='text'
-                  className='border border-gray-600 rounded-lg p-2 placeholder:text-[9px]'
+                  className='border border-gray-500 p-2 placeholder:text-[9px]'
                   placeholder='Sagar'
                 />
               </div>
@@ -378,7 +394,7 @@ const index = () => {
                 <input
                   value=''
                   type='text'
-                  className='border border-gray-600 rounded-lg p-2 placeholder:text-[9px]'
+                  className='border border-gray-500 p-2 placeholder:text-[9px]'
                   placeholder='Jaid'
                 />
               </div>
@@ -389,7 +405,7 @@ const index = () => {
               <input
                 value=''
                 type='number'
-                className='border border-gray-600 rounded-lg p-2 placeholder:text-[9px]'
+                className='border border-gray-500 p-2 placeholder:text-[9px]'
                 placeholder='+91 8898720799'
               />
             </div>
@@ -398,7 +414,7 @@ const index = () => {
               <label className='font-bold'>
                 Are you Interested in DEMO lecture?
               </label>
-              <select className='w-full rounded-lg border border-gray-600 p-2 text-xs outline-none'>
+              <select className='w-full border border-gray-500 p-2 text-xs outline-none'>
                 <option>Select</option>
                 <option value='Yes'>Yes</option>
                 <option value='No'>No</option>
@@ -407,7 +423,7 @@ const index = () => {
 
             <div className='flex flex-col gap-1 '>
               <label className='font-bold'>Course Mode</label>
-              <select className='w-full rounded-lg border border-gray-600 p-2 text-xs outline-none'>
+              <select className='w-full border border-gray-500 p-2 text-xs outline-none'>
                 <option>Select</option>
                 <option value='Offline'>Offline</option>
                 <option value='Online'>Online</option>
@@ -456,8 +472,26 @@ const index = () => {
             <div className='text-base'>call us: +918898720799</div>
           </div>
         </div>
+        <div onClick={handleToggle} className='fixed bottom-20 w-[200px] flex cursor-pointer items-center gap-1 justify-center rounded-full bg-black hover:bg-blue-600 p-3.5 text-white shadow-2xl'>
+          <span className='font-bold'>Apply Now</span>
+          <svg
+            className='w-4'
+            fill='none'
+            stroke='currentColor'
+            strokeWidth={3}
+            viewBox='0 0 24 24'
+            xmlns='http://www.w3.org/2000/svg'
+            aria-hidden='true'>
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75'
+            />
+          </svg>
+      </div>
       </div>
       <Footer />
+      <PopUp handleToggle={handleToggle} toggle={toggle}/>
     </>
   );
 };
