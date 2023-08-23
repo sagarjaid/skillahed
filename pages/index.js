@@ -106,150 +106,151 @@ const index = () => {
             />
             <Card
               name='Search Engine Optimization (SE0)'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Rank your website in top 3 organic position with help of on-page SEO & Off-page SEO in 2023'
+
               imgUrl='/seo.png'
             />
 
             <Card
               name='Google Search Console'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Rank your website in Google Search within few Hours using Google Search Console (Webmaster Tool)'
               imgUrl='/gsc.png'
             />
 
             <Card
               name='WordPress Website/Blog'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Learn to create amazing business or personal website and language pages for your business '
               imgUrl='/wordpress.png'
             />
             <Card
               name='Google Analytics (GA4)'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Understand the customer journey, mesure KPI and watch the traffic on your website live with Google Analytics'
               imgUrl='/google-analytics.png'
             />
             <Card
               name='Media Planning & Buying'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Learn the art of Digital media planning and buying & make right decisions for you business'
               imgUrl='/media-planing.png'
             />
             <Card
               name='Google Ads (PPC)'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Lean how to use Google Ads and drive sales, leads from paid Google Search & grow your business'
               imgUrl='/google-ads.png'
             />
             <Card
               name='Google Re-marketing Ads'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Learn to use Google Ads remarketing to re-engage with potential customers back to website/business'
               imgUrl='/remarketing.png'
             />
             <Card
               name='E-commerce Marketing'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Learn how to create, manage & drive purchases to your online e-commerce business with E-commerce Marketing'
               imgUrl='/ecommerce-marketing.png'
             />
             <Card
               name='Video/ YouTube Ads'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Ever though who run those video ads on youtube videos? Will learn the same in this module'
               imgUrl='/youtube-ads.png'
             />
             <Card
               name='Mobile App Marketing'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Learn how to increase your mobile app downloads in playstore and IOS store with mobile app marketing'
               imgUrl='/mobile-app-marketing.png'
             />
             <Card
               name='Social Media Marketing'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Master the social media marketing and market your brands on multiple social media site via paids ads'
               imgUrl='/social-media-marketing.png'
             />
 
             <Card
               name='Lead Generation'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Learn how to generate highly qualified leads via Search Engine Optimisation, social media channel and Google ads'
               imgUrl='/lead-generation.png'
             />
             <Card
               name='Facebook Ads'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Master the Art of running successful Facebook ads campaign and Scale to millions of users'
               imgUrl='/facebook-ads.png'
             />
             <Card
               name='Instagram Ads'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Master the Art of running successful Instagram ads campaign and Scale to millions of users'
               imgUrl='/instagram-ads.png'
             />
             <Card
               name='Social Media Management'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Master the social media account Management, Social media content calendar to market your brands on social media for FREE'
               imgUrl='/social-media-management.png'
             />
 
             <Card
               name='Viral Marketing'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Learn how few things go viral & how to use viral marketing for user business'
               imgUrl='/viral-marketing.png'
             />
 
             <Card
               name='AI for digital marketers'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='How to use AI for Digital Marketing, Learn ScripAI to create quality content as digital Marketing'
               imgUrl='/ai.png'
             />
             <Card
               name='Content Marketing'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Learn content marketing advanced concepts and core content strategies use to acquire/retain customers'
               imgUrl='/content-marketing.png'
             />
             <Card
               name='Canva Basics'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Learn how to use Canva, Basics of design and what make good design good?'
               imgUrl='/canva.png'
             />
 
             <Card
               name='Email Marketing'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Learn how to send thousands of email daily and how to use email marketing strategically and holistically'
               imgUrl='/email-marketing.png'
             />
 
             <Card
               name='WhatsApp Marketing'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Learn WhatsApp Marketing to broadcast and automate promotional/transactional messages on WhatsApp  '
               imgUrl='/whatsapp-marketing.png'
             />
 
             <Card
               name='Online Reputation Management ORM'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Learn how to manage and protect your brand/ business against fake reviews & bad marketing in ORM'
               imgUrl='/orm.png'
             />
 
             <Card
               name='Google Adsense'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Lern how to use Google Adsense to make money via renting your blog ads space to Google'
               imgUrl='/g-adsense.png'
             />
 
             <Card
               name='Blogging'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Master the art of writing & ranking your blogs on google and make money online and get free from 9-5 hustle'
               imgUrl='/blogging.png'
             />
 
             <Card
               name='Affiliate Marketing'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Lean how make money online with Affiliate Marketing as digital marketer in 2023'
               imgUrl='/affiliate-marketing.png'
             />
 
             <Card
               name='Freelancing'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Learn how to successfully become a freelance digital marketing expert in this module'
               imgUrl='/freelancing.png'
             />
 
             <Card
               name='Digital Marketing Strategy'
-              description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
+              description='Align your brand with set objectives and goals to attract a specific customers using all above marketing techniquess'
               imgUrl='/dm-strategy.png'
             />
           </div>
@@ -271,7 +272,7 @@ const index = () => {
               </div>
               <div className='text-6xl font-extrabold text-orange-500'>+</div>
 
-              <div className='w-[300px]  h-[400px] bg-orange-500 flex flex-col gap-6 justify-center items-center text-xl rounded-xl font-semibold shadow-md hover:shadow-xl cursor-pointer'>
+              <div className='w-[300px] h-[400px] bg-orange-500 flex flex-col gap-6 justify-center items-center text-xl rounded-xl font-semibold shadow-md hover:shadow-xl cursor-pointer'>
                 <img
                   src='/certificate-2.png'
                   className='w-20'
@@ -302,17 +303,27 @@ const index = () => {
         </div>
 
         <section className='flex flex-col text-center items-center py-4 gap-10 '>
-          <div className='text-base font-extrabold xs:text-xl sdm:text-3xl  md:text-4xl mdx:text-4xl '>
-            Certificates form Hyperlink School <br />
-            Google & Meta
+          <div className='text-base font-extrabold xs:text-xl sdm:text-3xl md:text-4xl mdx:text-4xl '>
+            Earn certificates form Hyperlink School, <br />
+            Google, Hubspot & Linkedin
           </div>
           <div className='w-full flex flex-col gap-5 md:flex-row'>
             <img
-              src='/hyperschool-certificate-2.png'
+              src='/google-certificate.png'
               className='w-full md:w-1/2 h-full  shadow-xl'
             />
             <img
-              src='/hyperschool-certificate.png'
+              src='/hyperlink-certificate.png'
+              className='w-full md:w-1/2 h-full shadow-xl'
+            />
+          </div>
+          <div className='w-full flex flex-col gap-5 md:flex-row'>
+            <img
+              src='/hubspot-certificate.png'
+              className='w-full md:w-1/2 h-full  shadow-xl'
+            />
+            <img
+              src='/linkedin-certificate.png'
               className='w-full md:w-1/2 h-full shadow-xl'
             />
           </div>
