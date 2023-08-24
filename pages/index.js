@@ -8,17 +8,104 @@ import { useEffect, useState } from 'react';
 const index = () => {
 
   const [toggle, setToggle] = useState(false);
+  const [isAtEnd, setIsAtEnd] = useState(false);
+  const [err, setErr] = useState(false)
+
 
   const handleToggle = () => {
-      setToggle(!toggle);
+    setToggle(!toggle);
+  };
+
+  let initialState = {
+    firstName: "",
+    lastName: "",
+    phoneNumber: "",
+    demoLecture: "",
+    courseMode: "",
+    location: "Home",
+  }
+
+  const [Data, setData] = useState(initialState);
+
+  const handleFName = (e) => {
+    setErr(false)
+    setData({ ...Data, firstName: e.target.value });
+  };
+  const handleLName = (e) => {
+    setErr(false)
+    setData({ ...Data, lastName: e.target.value });
+  };
+
+
+  const handlePhoneNumber = (e) => {
+    setErr(false)
+    setData({ ...Data, phoneNumber: e.target.value });
+  };
+
+  const handleDemoLecture = (e) => {
+    setErr(false)
+    setData({ ...Data, demoLecture: e.target.value });
+  };
+
+  const handleCourseMode = (e) => {
+    setErr(false)
+    setData({ ...Data, courseMode: e.target.value });
+  };
+
+  const handleSubmit = async () => {
+    if (Data.phoneNumber && Data.firstName && Data.lastName && Data.courseMode && Data.demoLecture) {
+      try {
+        let url = 'https://api.sheety.co/33d9ec27f5c7dfb130eb655baacab48d/hyperlink/new';
+        let body = {
+          new: Data
+        };
+
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json' // Set the content type to JSON
+          },
+          body: JSON.stringify(body),
+        });
+
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+
+        const json = await response.json();
+        console.log(json.new);
+
+        setData(initialState)
+
+        window.location.pathname = "/done"
+
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    } else {
+      setErr(true)
+    }
   };
 
   useEffect(() => {
-      const timeoutId = setTimeout(() => {
-          setToggle(true);
-      }, 1200);
-      return () => clearTimeout(timeoutId);
-    }, []);
+    const timeoutId = setTimeout(() => {
+      setToggle(true);
+    }, 2000);
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isAtBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
+      setIsAtEnd(isAtBottom);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -89,7 +176,7 @@ const index = () => {
         />
       </Head>
 
-      <div className='m-auto max-w-6xl flex flex-col gap-20  justify-center items-center p-4'>
+      <div className='m-auto max-w-6xl flex flex-col gap-20 justify-center items-center p-4'>
         <Nav handleToggle={handleToggle} toggle={toggle} />
 
         <div className='flex flex-col justify-center items-center gap-10 w-full  -mt-16'>
@@ -297,7 +384,7 @@ const index = () => {
                 <div>+</div>
                 <div>hyperlink Certificate</div>
                 <div>+</div>
-                <div>Meta Certificate</div>
+                <div>Hubspot Certificate</div>
               </div>
 
               <div className='text-6xl font-extrabold text-orange-500'>+</div>
@@ -318,12 +405,12 @@ const index = () => {
           </section>
         </div>
 
-        <section className='flex flex-col text-center items-center py-4 gap-10 '>
+        <section className='flex flex-col text-center items-center gap-4  '>
           <div className='text-base font-extrabold xs:text-xl sdm:text-3xl md:text-4xl mdx:text-4xl '>
             Earn certificates form Hyperlink School, <br />
-            Google, Hubspot & Linkedin
+            Google, Hubspot & LinkedIn
           </div>
-          <div className='w-full flex flex-col gap-5 md:flex-row'>
+          <div className='w-full flex flex-col gap-2 md:flex-row'>
             <img
               src='/google-certificate.png'
               className='w-full md:w-1/2 h-full  shadow-xl'
@@ -333,7 +420,7 @@ const index = () => {
               className='w-full md:w-1/2 h-full shadow-xl'
             />
           </div>
-          <div className='w-full flex flex-col gap-5 md:flex-row'>
+          <div className='w-full flex flex-col gap-2 md:flex-row'>
             <img
               src='/hubspot-certificate.png'
               className='w-full md:w-1/2 h-full  shadow-xl'
@@ -371,77 +458,69 @@ const index = () => {
         </div>
 
         <div className='flex flex-col md:flex-row-reverse w-full bg-white  border-4 rounded-xl border-orange-500 '>
-          <div className='md:w-1/2 bg-white flex flex-col justify-center p-6 md:px-10 gap-4 rounded-xl text-xs'>
+          <div className='md:w-1/2 bg-white flex flex-col justify-center p-6 md:px-10 gap-5 rounded-xl text-xs'>
             <section className='flex flex-col py-4  font-extrabold text-2xl sdm:text-3xl gap-3 '>
               <h1>Register for FREE Demo-lecture</h1>
               <div className='text-lg font-medium'>
                 Get 30% OFF on this month only for Limited seats
               </div>
             </section>
-            <div className='flex flex-col md:flex-row gap-2 w-full'>
-              <div className='w-full flex flex-col gap-1 '>
-                <label className='font-bold'>First name</label>
-                <input
-                  value=''
-                  type='text'
-                  className='border border-gray-500 p-2 placeholder:text-[9px]'
-                  placeholder='Sagar'
-                />
-              </div>
-
-              <div className='w-full flex flex-col gap-1 '>
-                <label className='font-bold'>Last name</label>
-                <input
-                  value=''
-                  type='text'
-                  className='border border-gray-500 p-2 placeholder:text-[9px]'
-                  placeholder='Jaid'
-                />
-              </div>
-            </div>
-
-            <div className='flex flex-col gap-1 '>
-              <label className='font-bold'>Phone number</label>
+            <div className='flex flex-col md:flex-row gap-5 md:gap-2 w-full'>
               <input
-                value=''
-                type='number'
-                className='border border-gray-500 p-2 placeholder:text-[9px]'
-                placeholder='+91 8898720799'
+                onChange={handleFName}
+                value={Data.firstName}
+                type='text'
+                className='border border-gray-500 p-2 placeholder:text-xs w-full'
+                placeholder='First Name *'
+              />
+
+              <input
+                onChange={handleLName}
+                value={Data.lastName}
+                type='text'
+                className='border border-gray-500 p-2 placeholder:text-xs w-full'
+                placeholder='Last Name *'
               />
             </div>
 
-            <div className='flex flex-col gap-1 '>
-              <label className='font-bold'>
-                Are you Interested in DEMO lecture?
-              </label>
-              <select className='w-full border border-gray-500 p-2 text-xs outline-none'>
-                <option>Select</option>
-                <option value='Yes'>Yes</option>
-                <option value='No'>No</option>
-              </select>
+            <div className='flex items-center border border-gray-500 '>
+              <div className='flex justify-center gap-1 items-center px-2'>
+                <img src='/india.png' className='w-6' />
+                <span>+91</span>
+              </div>
+              <input
+                onChange={handlePhoneNumber}
+                value={Data.phoneNumber}
+                type='number'
+                className='p-2 placeholder:text-xs w-full'
+                placeholder='Phone number *'
+              />
             </div>
 
-            <div className='flex flex-col gap-1 '>
-              <label className='font-bold'>Course Mode</label>
-              <select className='w-full border border-gray-500 p-2 text-xs outline-none'>
-                <option>Select</option>
-                <option value='Offline'>Offline</option>
-                <option value='Online'>Online</option>
-              </select>
-            </div>
+            <select onChange={handleDemoLecture} className='w-full border border-gray-500 p-2 text-xs outline-none'>
+              <option>Are you Interested in DEMO lecture? *</option>
+              <option value='Yes'>Yes</option>
+              <option value='No'>No</option>
+            </select>
 
-            {'err' && (
+            <select onChange={handleCourseMode} className='w-full border border-gray-500 p-2 text-xs outline-none'>
+              <option>Select Course Mode *</option>
+              <option value='Offline'>Offline</option>
+              <option value='Online'>Online</option>
+            </select>
+
+            {err && (
               <div className='text-xs text-orange-700'>
                 All fields are required*
               </div>
             )}
-            <div className='flex w-fit gap-2 items-center cursor-pointer justify-center rounded-full bg-orange-500 p-2 px-4 text-white  hover:bg-orange-600 '>
+            <div onClick={handleSubmit} className='flex w-fit gap-2 items-center cursor-pointer justify-center font-semibold rounded-full bg-orange-500 p-2 px-4 text-white  hover:bg-orange-600 '>
               <span>Submit</span>
               <svg
                 className='w-5'
                 fill='none'
                 stroke='currentColor'
-                strokeWidth={1.5}
+                strokeWidth={2}
                 viewBox='0 0 24 24'
                 xmlns='http://www.w3.org/2000/svg'
                 aria-hidden='true'>
@@ -472,26 +551,15 @@ const index = () => {
             <div className='text-base'>call us: +918898720799</div>
           </div>
         </div>
-        <div onClick={handleToggle} className='fixed bottom-20 w-[200px] flex cursor-pointer items-center gap-1 justify-center rounded-full bg-black hover:bg-blue-600 p-3.5 text-white shadow-2xl'>
-          <span className='font-bold'>Apply Now</span>
-          <svg
-            className='w-4'
-            fill='none'
-            stroke='currentColor'
-            strokeWidth={3}
-            viewBox='0 0 24 24'
-            xmlns='http://www.w3.org/2000/svg'
-            aria-hidden='true'>
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              d='M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75'
-            />
+        <div onClick={handleToggle} className={`fixed bottom-10 w-[200px] flex cursor-pointer items-center gap-1 justify-center rounded-full bg-green-600 hover:bg-green-500 p-3 text-white shadow-2xl ${isAtEnd ? 'hidden' : 'block'}`}>
+          <span className='font-bold'>Get a call back</span>
+          <svg className='w-4 animate-pulse' fill="none" stroke="currentColor" strokeWidth={3} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
           </svg>
-      </div>
+        </div>
       </div>
       <Footer />
-      <PopUp handleToggle={handleToggle} toggle={toggle}/>
+      <PopUp handleToggle={handleToggle} toggle={toggle} url="Home" />
     </>
   );
 };
