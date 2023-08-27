@@ -45,6 +45,156 @@
     "emojiU": "U+1F1EE U+1F1F3",
     "states": [
       {
+        "id": 8763983749,
+        "name": "Bangalore",
+        "state_code": "BLR",
+        "latitude": "11.74008670",
+        "longitude": "92.65864010",
+        "type": "Union territory",
+        "cities": [
+          {
+            "id": 7587782031,
+            "name": "CST"
+          },
+          {
+            "id": 7587782032,
+            "name": "Masjid"
+          },
+          {
+            "id": 7587782033,
+            "name": "Sandhurst Road"
+          },
+          {
+            "id": 7587782034,
+            "name": "Byculla"
+          },
+          {
+            "id": 7587782034,
+            "name": "Currey Road"
+          },
+          {
+            "id": 7587782035,
+            "name": "Parel"
+          },
+          {
+            "id": 7587782036,
+            "name": "Dadar"
+          },
+          {
+            "id": 7587782037,
+            "name": "Matunga"
+          },
+          {
+            "id": 7587782038,
+            "name": "Kurla"
+          },
+          {
+            "id": 7587782039,
+            "name": "Vidyavihar"
+          },
+          {
+            "id": 7587782040,
+            "name": "Ghatkopar"
+          },
+          {
+            "id": 7587782041,
+            "name": "Kanjurmarg"
+          },
+          {
+            "id": 7587782042,
+            "name": "Nahur"
+          },
+          {
+            "id": 7587782060,
+            "name": "Kalva"
+          },
+          {
+            "id": 7587782044,
+            "name": "Mumbra"
+          },
+          {
+            "id": 7587782045,
+            "name": "Thakurli"
+          },
+          {
+            "id": 7587782046,
+            "name": "Saki Naka"
+          },
+          {
+            "id": 7587782047,
+            "name": "Sadashivanagar"
+          },
+          {
+            "id": 7587782048,
+            "name": "Basavanagudi"
+          },
+          {
+            "id": 7587782049,
+            "name": "Indira Nagar"
+          },
+          {
+            "id": 7587782060,
+            "name": "Koramangala"
+          },
+          {
+            "id": 7587782051,
+            "name": "Jayanagar"
+          },
+          {
+            "id": 7587782052,
+            "name": "Jpanagar"
+          },
+          {
+            "id": 7587782053,
+            "name": "Malleswaram"
+          },
+          {
+            "id": 7587782054,
+            "name": "Rajaji Nagar"
+          },
+          {
+            "id": 7587782055,
+            "name": "Ulsoor"
+          },
+          {
+            "id": 7587782056,
+            "name": "Btm Layout"
+          },
+          {
+            "id": 7587782057,
+            "name": "Marathahalli"
+          },
+          {
+            "id": 7587782058,
+            "name": "Sarjapur Road "
+          },
+          {
+            "id": 7587782059,
+            "name": "Electronic City"
+          },
+          {
+            "id": 7587782060,
+            "name": "Whitefield"
+          },
+          {
+            "id": 7587782061,
+            "name": "Banashankari"
+          },
+          {
+            "id": 7587782062,
+            "name": "Frazer Town"
+          },
+          {
+            "id": 7587782063,
+            "name": "HSR Layout"
+          },
+          {
+            "id": 7587782064,
+            "name": "Bellandur"
+          }
+        ]
+      },
+      {
         "id": 4023,
         "name": "Andaman and Nicobar Islands",
         "state_code": "AN",
@@ -5909,6 +6059,12 @@
             "name": "Yamunanagar",
             "latitude": "30.23644000",
             "longitude": "77.30498000"
+          },
+          {
+            "id": 134429898,
+            "name": "Mysore",
+            "latitude": "30.23644000",
+            "longitude": "77.30498000"
           }
         ]
       },
@@ -11419,12 +11575,6 @@
             "longitude": "76.41667000"
           },
           {
-            "id": 147719,
-            "name": "Byculla",
-            "latitude": "18.98000000",
-            "longitude": "72.83500000"
-          },
-          {
             "id": 131589,
             "name": "Chakan",
             "latitude": "18.76059000",
@@ -11837,12 +11987,6 @@
             "name": "Ghatanji",
             "latitude": "20.14183000",
             "longitude": "78.31333000"
-          },
-          {
-            "id": 147747,
-            "name": "Ghatkopar",
-            "latitude": "19.08000000",
-            "longitude": "72.91000000"
           },
           {
             "id": 131947,
@@ -12721,12 +12865,6 @@
             "longitude": "73.26520000"
           },
           {
-            "id": 147820,
-            "name": "Matunga",
-            "latitude": "19.01798056",
-            "longitude": "72.84476389"
-          },
-          {
             "id": 147821,
             "name": "Mazagaon",
             "latitude": "18.97000000",
@@ -13169,12 +13307,6 @@
             "name": "Parbhani",
             "latitude": "19.50000000",
             "longitude": "76.75000000"
-          },
-          {
-            "id": 147855,
-            "name": "Parel",
-            "latitude": "18.99000000",
-            "longitude": "72.84000000"
           },
           {
             "id": 133360,

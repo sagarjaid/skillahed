@@ -5,87 +5,101 @@ import Footer from '@/components/Footer';
 import Nav from '@/components/Nav';
 
 const Link = () => {
+  const getCountryStateCityNames = (data) => {
+    const countryNames = [];
+    const stateNames = [];
+    const cityNames = [];
 
-    const  getCountryStateCityNames = (data) =>{
-      const countryNames = [];
-      const stateNames = [];
-      const cityNames = [];
-  
-      for (const country of data) {
-        countryNames.push(country.name);
-        for (const state of country.states) {
-          stateNames.push(state.name);
-          for (const city of state.cities) {
-            cityNames.push(city.name);
-          }
+    for (const country of data) {
+      countryNames.push(country.name);
+      for (const state of country.states) {
+        stateNames.push(state.name);
+        for (const city of state.cities) {
+          cityNames.push(city.name);
         }
       }
-  
-      let newArr = [...countryNames, ...stateNames, ...cityNames];
-  
-      function classesSlugify(string) {
-        // Convert all characters to lowercase.
-        string = string.toLowerCase();
-  
-        // Replace all consecutive hyphens with a single hyphen.
-        string = string.replaceAll(' ', '-');
-  
-        // Remove any leading or trailing hyphens.
-        string = string.trim('-');
-  
-        return `digital-marketing-classes-in-${string}`;
-      }
-  
-      function coursesSlugify(string) {
-        // Convert all characters to lowercase.
-        string = string.toLowerCase();
-  
-        // Replace all consecutive hyphens with a single hyphen.
-        string = string.replaceAll(' ', '-');
-  
-        // Remove any leading or trailing hyphens.
-        string = string.trim('-');
-  
-        return `digital-marketing-courses-in-${string}`;
-      }
-  
-      function instituteSlugify(string) {
-        // Convert all characters to lowercase.
-        string = string.toLowerCase();
-  
-        // Replace all consecutive hyphens with a single hyphen.
-        string = string.replaceAll(' ', '-');
-  
-        // Remove any leading or trailing hyphens.
-        string = string.trim('-');
-  
-        return `digital-marketing-institute-in-${string}`;
-      }
-  
-      let classesArr = newArr.map((el) => {
-        return  { url: classesSlugify(el) };
-      });
-  
-      let coursessArr = newArr.map((el) => {
-        return  { url: coursesSlugify(el) };
-      });
-  
-      let instituteArr = newArr.map((el) => {
-        return  { url: instituteSlugify(el) };
-      });
-  
-      let countryStateArr = [...classesArr, ...coursessArr, ...instituteArr];
-  
-      return countryStateArr;
     }
-  
-    const pathArr = getCountryStateCityNames(all);
-  
+
+    let newArr = [...countryNames, ...stateNames, ...cityNames];
+
+    function classesSlugify(string) {
+      // Convert all characters to lowercase.
+      string = string.toLowerCase();
+
+      // Replace all consecutive hyphens with a single hyphen.
+      string = string.replaceAll(' ', '-');
+
+      // Remove any leading or trailing hyphens.
+      string = string.trim('-');
+
+      return `digital-marketing-classes-in-${string}`;
+    }
+
+    function coursesSlugify(string) {
+      // Convert all characters to lowercase.
+      string = string.toLowerCase();
+
+      // Replace all consecutive hyphens with a single hyphen.
+      string = string.replaceAll(' ', '-');
+
+      // Remove any leading or trailing hyphens.
+      string = string.trim('-');
+
+      return `digital-marketing-courses-in-${string}`;
+    }
+
+    function instituteSlugify(string) {
+      // Convert all characters to lowercase.
+      string = string.toLowerCase();
+
+      // Replace all consecutive hyphens with a single hyphen.
+      string = string.replaceAll(' ', '-');
+
+      // Remove any leading or trailing hyphens.
+      string = string.trim('-');
+
+      return `digital-marketing-institute-in-${string}`;
+    }
+
+    let classesArr = newArr.map((el) => {
+      return { url: classesSlugify(el) };
+    });
+
+    let coursessArr = newArr.map((el) => {
+      return { url: coursesSlugify(el) };
+    });
+
+    let instituteArr = newArr.map((el) => {
+      return { url: instituteSlugify(el) };
+    });
+
+    let countryStateArr = [...classesArr, ...coursessArr, ...instituteArr];
+
+    return countryStateArr;
+  };
+
+  const pathArr = getCountryStateCityNames(all);
+
+  function unslugify(string) {
+    // Replace all hyphens with spaces.
+    string = string.replace(/-/g, ' ');
+
+    // Capitalize the first letter of each word.
+    string = string.replace(/\w+/g, function (word) {
+      return word[0].toUpperCase() + word.slice(1);
+    });
+
+    // Convert " in " to lowercase
+    string = string.replace(/\sin\s/gi, ' in ');
+
+    return string;
+  }
+
   return (
     <>
       <SEOMeta
         title='Digital Marketing Course — Hyperlink School'
-        description='Best digital marketing course in India with placemnet, fees: 24,999/- only'
+        description='Best digital marketing course in India with placement, fees: 24,999/- only'
         slug='links'
       />
 
@@ -104,7 +118,7 @@ const Link = () => {
                   <a
                     className='text-blue-500'
                     href={`https://hyperlinkschool.com/${el.url}`}>
-                    {el.url}
+                    {unslugify(el.url)}
                   </a>
                 </div>
               ))}

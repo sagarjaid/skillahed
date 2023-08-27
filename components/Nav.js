@@ -1,7 +1,9 @@
 import React from 'react';
 
-const Nav = ({handleToggle}) => {
-
+const Nav = ({ handleToggle }) => {
+  const handleClick = () => {
+    window.location.pathname = '/';
+  };
   return (
     <nav className='w-full flex justify-between items-center py-3 sticky top-0 bg-white'>
       <a href='https://hyperlinkschool.com/'>
@@ -15,7 +17,9 @@ const Nav = ({handleToggle}) => {
           src='/google-partner.png'
           className='hidden  md:block w-[100px] border rounded-md shadow-sm'
         />
-        <div onClick={handleToggle} className='flex cursor-pointer items-center gap-1 justify-around rounded-full bg-orange-500 hover:bg-orange-600 p-2.5 px-4 text-white shadow-sm'>
+        <div
+          onClick={handleToggle || handleClick}
+          className='flex cursor-pointer items-center gap-1 justify-around rounded-full bg-orange-500 hover:bg-orange-600 p-2.5 px-4 text-white shadow-sm'>
           <span className='text-xs font-bold'>Apply Now</span>
           <svg
             className='w-4'

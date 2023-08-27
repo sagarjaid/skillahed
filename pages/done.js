@@ -6,7 +6,7 @@ const Done = () => {
       <div className='flex items-center gap-1 justify-around rounded-full bg-orange-500 p-2 px-4 text-white'>
         <a
           href='#'
-          target="_blank"
+          target='_blank'
           className='text-sm'>
           Follow us on Instagram
         </a>

@@ -6,64 +6,68 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 
 const index = () => {
-
   const [toggle, setToggle] = useState(false);
   const [isAtEnd, setIsAtEnd] = useState(false);
-  const [err, setErr] = useState(false)
-
+  const [err, setErr] = useState(false);
 
   const handleToggle = () => {
     setToggle(!toggle);
   };
 
   let initialState = {
-    firstName: "",
-    lastName: "",
-    phoneNumber: "",
-    demoLecture: "",
-    courseMode: "",
-    location: "Home",
-  }
+    firstName: '',
+    lastName: '',
+    phoneNumber: '',
+    demoLecture: '',
+    courseMode: '',
+    location: 'Home',
+  };
 
   const [Data, setData] = useState(initialState);
 
   const handleFName = (e) => {
-    setErr(false)
+    setErr(false);
     setData({ ...Data, firstName: e.target.value });
   };
   const handleLName = (e) => {
-    setErr(false)
+    setErr(false);
     setData({ ...Data, lastName: e.target.value });
   };
 
-
   const handlePhoneNumber = (e) => {
-    setErr(false)
+    setErr(false);
     setData({ ...Data, phoneNumber: e.target.value });
   };
 
   const handleDemoLecture = (e) => {
-    setErr(false)
+    setErr(false);
     setData({ ...Data, demoLecture: e.target.value });
   };
 
   const handleCourseMode = (e) => {
-    setErr(false)
+    setErr(false);
     setData({ ...Data, courseMode: e.target.value });
   };
 
   const handleSubmit = async () => {
-    if (Data.phoneNumber && Data.firstName && Data.lastName && Data.courseMode && Data.demoLecture) {
+    if (
+      Data.phoneNumber &&
+      Data.firstName &&
+      Data.lastName &&
+      Data.courseMode &&
+      Data.demoLecture
+    ) {
       try {
-        let url = 'https://api.sheety.co/33d9ec27f5c7dfb130eb655baacab48d/hyperlink/new';
+        let url =
+          'https://api.sheety.co/33d9ec27f5c7dfb130eb655baacab48d/hyperlink/new';
         let body = {
-          new: Data
+          new: Data,
         };
 
         const response = await fetch(url, {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json' // Set the content type to JSON
+            'Content-Type': 'application/json', // Set the content type to JSON
           },
           body: JSON.stringify(body),
         });
@@ -75,15 +79,14 @@ const index = () => {
         const json = await response.json();
         console.log(json.new);
 
-        setData(initialState)
+        setData(initialState);
 
-        window.location.pathname = "/done"
-
+        window.location.pathname = '/done';
       } catch (error) {
         console.error('Error:', error);
       }
     } else {
-      setErr(true)
+      setErr(true);
     }
   };
 
@@ -96,7 +99,14 @@ const index = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const isAtBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
+      const scrollThreshold = 0.9; // 90% of the page
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.body.offsetHeight;
+
+      const isAtBottom =
+        scrollY + windowHeight >= scrollThreshold * documentHeight;
+
       setIsAtEnd(isAtBottom);
     };
 
@@ -110,14 +120,14 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Hyperlink School - Digital Marketing course in Mumbai</title>
+        <title>Hyperlink School - Digital Marketing course in Bangalore</title>
         <meta
           name='title'
-          content='Hyperlink School - Digital Marketing course in Mumbai'
+          content='Hyperlink School - Digital Marketing course in Bangalore'
         />
         <meta
           name='description'
-          content='Best digital marketing course in mumbai with placemnet, fees: 24,999/- only'
+          content='Best digital marketing course in Bangalore with placement, fees: 24,999/- only'
         />
         <link
           rel='canonical'
@@ -134,11 +144,11 @@ const index = () => {
         />
         <meta
           property='og:title'
-          content='Hyperlink School - Digital Marketing course in Mumbai'
+          content='Hyperlink School - Digital Marketing course in Bangalore'
         />
         <meta
           property='og:description'
-          content='Best digital marketing course in mumbai with placemnet, fees: 24,999/- only'
+          content='Best digital marketing course in Bangalore with placement, fees: 24,999/- only'
         />
         <meta
           property='og:image'
@@ -155,11 +165,11 @@ const index = () => {
         />
         <meta
           property='twitter:title'
-          content='Hyperlink School - Digital Marketing course in Mumbai'
+          content='Hyperlink School - Digital Marketing course in Bangalore'
         />
         <meta
           property='twitter:description'
-          content='Best digital marketing course in mumbai with placemnet, fees: 24,999/- only'
+          content='Best digital marketing course in Bangalore with placement, fees: 24,999/- only'
         />
         <meta
           property='twitter:image'
@@ -177,7 +187,10 @@ const index = () => {
       </Head>
 
       <div className='m-auto max-w-6xl flex flex-col gap-20 justify-center items-center p-4'>
-        <Nav handleToggle={handleToggle} toggle={toggle} />
+        <Nav
+          handleToggle={handleToggle}
+          toggle={toggle}
+        />
 
         <div className='flex flex-col justify-center items-center gap-10 w-full  -mt-16'>
           <section className=''>
@@ -192,7 +205,7 @@ const index = () => {
           </section>
 
           <section className='flex flex-col text-center items-center py-4 text-base font-extrabold xs:text-xl sdm:text-3xl gap-4 md:text-4xl mdx:text-4xl '>
-            <h1>Digital Marketing Courses in Mumbai</h1>
+            <h1>Digital Marketing Courses in Bangalore</h1>
             <h2 className='md:text-xl text-orange-500'>
               24+ Modules <sapn className='line-through'>₹30,999</sapn> Now only
               at ₹24,999
@@ -210,7 +223,6 @@ const index = () => {
             <Card
               name='Search Engine Optimization (SE0)'
               description='Rank your website in top 3 organic position with help of on-page SEO & Off-page SEO in 2023'
-
               imgUrl='/seo.png'
             />
 
@@ -405,7 +417,7 @@ const index = () => {
           </section>
         </div>
 
-        <section className='flex flex-col text-center items-center gap-4  '>
+        <section className='flex flex-col text-center items-center gap-10  '>
           <div className='text-base font-extrabold xs:text-xl sdm:text-3xl md:text-4xl mdx:text-4xl '>
             Earn certificates form Hyperlink School, <br />
             Google, Hubspot & LinkedIn
@@ -459,11 +471,14 @@ const index = () => {
 
         <div className='flex flex-col md:flex-row-reverse w-full bg-white  border-4 rounded-xl border-orange-500 '>
           <div className='md:w-1/2 bg-white flex flex-col justify-center p-6 md:px-10 gap-5 rounded-xl text-xs'>
-            <section className='flex flex-col py-4  font-extrabold text-2xl sdm:text-3xl gap-3 '>
+            <section className='flex flex-col pt-4 font-extrabold text-2xl sdm:text-3xl gap-3 '>
               <h1>Register for FREE Demo-lecture</h1>
               <div className='text-lg font-medium'>
                 Get 30% OFF on this month only for Limited seats
               </div>
+              <h3 className='text-xs font-normal text-gray-700'>
+                Digital marketing course in Bangalore with placement
+              </h3>
             </section>
             <div className='flex flex-col md:flex-row gap-5 md:gap-2 w-full'>
               <input
@@ -485,7 +500,10 @@ const index = () => {
 
             <div className='flex items-center border border-gray-500 '>
               <div className='flex justify-center gap-1 items-center px-2'>
-                <img src='/india.png' className='w-6' />
+                <img
+                  src='/india.png'
+                  className='w-6'
+                />
                 <span>+91</span>
               </div>
               <input
@@ -497,13 +515,17 @@ const index = () => {
               />
             </div>
 
-            <select onChange={handleDemoLecture} className='w-full border border-gray-500 p-2 text-xs outline-none'>
+            <select
+              onChange={handleDemoLecture}
+              className='w-full border border-gray-500 p-2 text-xs outline-none'>
               <option>Are you Interested in DEMO lecture? *</option>
               <option value='Yes'>Yes</option>
               <option value='No'>No</option>
             </select>
 
-            <select onChange={handleCourseMode} className='w-full border border-gray-500 p-2 text-xs outline-none'>
+            <select
+              onChange={handleCourseMode}
+              className='w-full border border-gray-500 p-2 text-xs outline-none'>
               <option>Select Course Mode *</option>
               <option value='Offline'>Offline</option>
               <option value='Online'>Online</option>
@@ -514,7 +536,9 @@ const index = () => {
                 All fields are required*
               </div>
             )}
-            <div onClick={handleSubmit} className='flex w-fit gap-2 items-center cursor-pointer justify-center font-semibold rounded-full bg-orange-500 p-2 px-4 text-white  hover:bg-orange-600 '>
+            <div
+              onClick={handleSubmit}
+              className='flex w-fit gap-2 items-center cursor-pointer justify-center font-semibold rounded-full bg-orange-500 p-2 px-4 text-white  hover:bg-orange-600 '>
               <span>Submit</span>
               <svg
                 className='w-5'
@@ -551,15 +575,34 @@ const index = () => {
             <div className='text-base'>call us: +918898720799</div>
           </div>
         </div>
-        <div onClick={handleToggle} className={`fixed bottom-10 w-[200px] flex cursor-pointer items-center gap-1 justify-center rounded-full bg-green-600 hover:bg-green-500 p-3 text-white shadow-2xl ${isAtEnd ? 'hidden' : 'block'}`}>
+        <div
+          onClick={handleToggle}
+          className={`fixed bottom-10 w-[200px] flex cursor-pointer items-center gap-1 justify-center rounded-full bg-green-600 hover:bg-green-500 p-3 text-white shadow-2xl ${
+            isAtEnd ? 'hidden' : 'block'
+          }`}>
           <span className='font-bold'>Get a call back</span>
-          <svg className='w-4 animate-pulse' fill="none" stroke="currentColor" strokeWidth={3} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+          <svg
+            className='w-4 animate-pulse'
+            fill='none'
+            stroke='currentColor'
+            strokeWidth={3}
+            viewBox='0 0 24 24'
+            xmlns='http://www.w3.org/2000/svg'
+            aria-hidden='true'>
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5'
+            />
           </svg>
         </div>
       </div>
       <Footer />
-      <PopUp handleToggle={handleToggle} toggle={toggle} url="Home" />
+      <PopUp
+        handleToggle={handleToggle}
+        toggle={toggle}
+        url='Home'
+      />
     </>
   );
 };
