@@ -98,8 +98,8 @@ const Link = () => {
   return (
     <>
       <SEOMeta
-        title='Digital Marketing Course — Hyperlink School'
-        description='Best digital marketing course in India with placement, fees: 24,999/- only'
+        title='Digital Marketing Courses List in India — Hyperlink School'
+        description='Best digital marketing courses List in India with placement, fees: 24,999/- only'
         slug='links'
       />
 

@@ -120,14 +120,14 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Hyperlink School - Digital Marketing course in Bangalore</title>
+        <title>Hyperlink School - Digital Marketing courses in Bangalore</title>
         <meta
           name='title'
-          content='Hyperlink School - Digital Marketing course in Bangalore'
+          content='Hyperlink School - Digital Marketing courses in Bangalore'
         />
         <meta
           name='description'
-          content='Best digital marketing course in Bangalore with placement, fees: 24,999/- only'
+          content='Best digital marketing courses in Bangalore with placement, fees: 24,999/- only'
         />
         <link
           rel='canonical'
@@ -144,11 +144,11 @@ const index = () => {
         />
         <meta
           property='og:title'
-          content='Hyperlink School - Digital Marketing course in Bangalore'
+          content='Hyperlink School - Digital Marketing courses in Bangalore'
         />
         <meta
           property='og:description'
-          content='Best digital marketing course in Bangalore with placement, fees: 24,999/- only'
+          content='Best digital marketing courses in Bangalore with placement, fees: 24,999/- only'
         />
         <meta
           property='og:image'
@@ -165,11 +165,11 @@ const index = () => {
         />
         <meta
           property='twitter:title'
-          content='Hyperlink School - Digital Marketing course in Bangalore'
+          content='Hyperlink School - Digital Marketing courses in Bangalore'
         />
         <meta
           property='twitter:description'
-          content='Best digital marketing course in Bangalore with placement, fees: 24,999/- only'
+          content='Best digital marketing courses in Bangalore with placement, fees: 24,999/- only'
         />
         <meta
           property='twitter:image'
@@ -477,7 +477,7 @@ const index = () => {
                 Get 30% OFF on this month only for Limited seats
               </div>
               <h3 className='text-xs font-normal text-gray-700'>
-                Digital marketing course in Bangalore with placement
+                Digital marketing courses in Bangalore with placement
               </h3>
             </section>
             <div className='flex flex-col md:flex-row gap-5 md:gap-2 w-full'>
