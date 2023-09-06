@@ -357,8 +357,8 @@ const coursesPages = ({ text, url }) => {
           </section>
         </div>
 
-        <section className='flex flex-col text-center items-center gap-10  '>
-          <div className='text-base font-extrabold xs:text-xl sdm:text-3xl md:text-4xl mdx:text-4xl '>
+        <section className='flex flex-col text-center items-center gap-2  '>
+          <div className='text-base font-extrabold xs:text-xl sdm:text-3xl md:text-4xl mdx:text-4xl mb-10 '>
             Earn certificates form Hyperlink School, <br />
             Google, Hubspot & LinkedIn
           </div>
