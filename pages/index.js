@@ -191,7 +191,6 @@ const index = () => {
           handleToggle={handleToggle}
           toggle={toggle}
         />
-
         <div className='flex flex-col justify-center items-center gap-10 w-full  -mt-16'>
           <section className=''>
             <img
@@ -214,7 +213,7 @@ const index = () => {
             <div className='text-lg font-normal'>You will be learning...</div>
           </section>
 
-          <div className='flex gap-4 justify-center -mt-6 flex-wrap'>
+          <div className='flex gap-4 sdm:justify-center -mt-6 flex-wrap'>
             <Card
               name='Digital Marketing Fundamentals'
               description='Digital Marketing Fundamentals and Overview of all digital marketing & Modules'
@@ -416,7 +415,6 @@ const index = () => {
             </div>
           </section>
         </div>
-
         <section className='flex flex-col text-center items-center gap-2  '>
           <div className='text-base font-extrabold xs:text-xl sdm:text-3xl md:text-4xl mdx:text-4xl mb-10 '>
             Earn certificates form Hyperlink School, <br />
@@ -444,6 +442,69 @@ const index = () => {
           </div>
         </section>
 
+        <section className='w-full flex flex-col text-center items-center gap-2  '>
+          <div className='text-base font-extrabold xs:text-xl sdm:text-3xl md:text-4xl mdx:text-4xl mb-10 '>
+            Online & Offline Batches
+          </div>
+
+          <div className='flex w-full justify-start  items-start flex-col gap-4'>
+            <div className='flex flex-col md:flex-row justify-center border-2 rounded-2xl w-full  border-green-500 '>
+              <div className='bg-green-500 p-4 md:max-w-[280px] md:rounded-l-xl md:rounded-r-none rounded-t-xl  font-bold'>
+                <div className='text-white text-lg text-left md:text-center'>
+                  OFFLINE
+                </div>
+              </div>
+              <div className='flex flex-col gap-2 p-6 border-b-2 md:border-b-0 text-left md:border-r-2 md:border-b-none border-green-500 flex-grow'>
+                <div className='font-bold pb-3'>Weekday Batch</div>
+                <div>7:30 AM to 10:00 AM (Morning)</div>
+                <div>Monday to Wednesday</div>
+                <div>3 Days per Week (2.5 hours Daily) </div>
+                <div>3 Months Course Duration</div>
+              </div>
+              <div className='flex flex-col gap-2 p-6 text-left flex-grow'>
+                <div className='font-bold pb-3'>Weekend Batch</div>
+                <div>7:30 AM to 10:30 AM (Morning)</div>
+                <div>Saturday and Sunday</div>
+                <div>2 Days per Week (3 hours Daily) </div>
+                <div>4 Months Course Duration</div>
+              </div>
+            </div>
+            <div className='flex flex-col md:flex-row justify-center border-2 rounded-2xl w-full  border-green-500 '>
+              <div className='bg-green-500 p-4 md:rounded-l-xl md:rounded-r-none rounded-t-xl  font-bold'>
+                <div className='text-white text-lg text-left md:text-center min-w-[75px]'>
+                  ONLINE
+                </div>
+              </div>
+              <div className='flex flex-col gap-2 p-6 border-b-2 md:border-b-0 text-left  md:border-r-2 md:border-b-none border-green-500 flex-grow'>
+                <div className='font-bold pb-3'>Weekday Batch</div>
+                <div>11:00 AM to 1:30 AM (Late Morning)</div>
+                <div>Monday to Wednesday</div>
+                <div>3 Days per Week (2.5 hours Daily) </div>
+                <div>3 Months Course Duration</div>
+              </div>
+              <div className='flex flex-col gap-2 p-6 text-left flex-grow'>
+                <div className='font-bold pb-3'>Weekend Batch</div>
+                <div>11:00 AM to 2:00 AM (Late Morning)</div>
+                <div>Saturday and Sunday</div>
+                <div>2 Days per Week (3 hours Daily) </div>
+                <div>4 Months Course Duration</div>
+              </div>
+            </div>
+            <div className='flex flex-col justify-center border-2 text-left rounded-2xl w-full  border-green-500 '>
+              <div className='bg-green-500 p-4  rounded-t-xl  font-bold '>
+                <div className='text-white text-lg'>ONLINE SUNDAY ONLY</div>
+              </div>
+              <div className='flex flex-col gap-2 p-6  flex-grow'>
+                <div className='font-bold pb-3'>Only Sunday Batch</div>
+                <div>8:00 PM to 11:00 PM (Late Evening)</div>
+                <div>Every Sunday</div>
+                <div>1 Days per Week (3 hours Daily) </div>
+                <div>6 Months Course Duration</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className='flex flex-col text-center items-center py-4 gap-10 '>
           <div className='text-base font-extrabold xs:text-xl sdm:text-3xl  md:text-4xl mdx:text-4xl '>
             Internship & Placement partners
@@ -453,7 +514,6 @@ const index = () => {
             className='w-full sdm:w-1/2'
           />
         </section>
-
         <div className='flex md:hidden flex-col w-full bg-orange-500 text-white rounded-xl text-4xl gap-20 p-4 py-10 justify-center items-center'>
           <img
             src='/hyperlink-logo-2.png'
@@ -468,7 +528,6 @@ const index = () => {
 
           <div className='text-base'>call us: +918898720799</div>
         </div>
-
         <div className='flex flex-col md:flex-row-reverse w-full bg-white  border-4 rounded-xl border-orange-500 '>
           <div className='md:w-1/2 bg-white flex flex-col justify-center p-6 md:px-10 gap-5 rounded-xl text-xs'>
             <section className='flex flex-col pt-4 font-extrabold text-2xl sdm:text-3xl gap-3 '>
