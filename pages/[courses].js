@@ -666,19 +666,6 @@ export async function getStaticPaths() {
       return `digital-marketing-institute-in-${string}`;
     }
 
-    function SMMSlugify(string) {
-      // Convert all characters to lowercase.
-      string = string.toLowerCase();
-
-      // Replace all consecutive hyphens with a single hyphen.
-      string = string.replaceAll(' ', '-');
-
-      // Remove any leading or trailing hyphens.
-      string = string.trim('-');
-
-      return `social-media-marketing-courses-in-${string}`;
-    }
-
     function SEOSlugify(string) {
       // Convert all characters to lowercase.
       string = string.toLowerCase();
@@ -704,10 +691,6 @@ export async function getStaticPaths() {
       return { params: { courses: instituteSlugify(el) } };
     });
 
-    let smmArr = newArr.map((el) => {
-      return { params: { courses: SMMSlugify(el) } };
-    });
-
     let seoArr = newArr.map((el) => {
       return { params: { courses: SEOSlugify(el) } };
     });
@@ -716,7 +699,6 @@ export async function getStaticPaths() {
       ...classesArr,
       ...coursessArr,
       ...instituteArr,
-      ...smmArr,
       ...seoArr,
     ];
 
