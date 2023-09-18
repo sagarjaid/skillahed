@@ -6,6 +6,7 @@ const PopUp = ({ handleToggle, toggle, url }) => {
   let initialState = {
     firstName: '',
     lastName: '',
+    email: '',
     phoneNumber: '',
     demoLecture: '',
     courseMode: '',
@@ -28,6 +29,11 @@ const PopUp = ({ handleToggle, toggle, url }) => {
     setData({ ...Data, phoneNumber: e.target.value });
   };
 
+  const handleEmail = (e) => {
+    setErr(false);
+    setData({ ...Data, email: e.target.value });
+  };
+
   const handleDemoLecture = (e) => {
     setErr(false);
     setData({ ...Data, demoLecture: e.target.value });
@@ -43,6 +49,7 @@ const PopUp = ({ handleToggle, toggle, url }) => {
       Data.phoneNumber &&
       Data.firstName &&
       Data.lastName &&
+      Data.email &&
       Data.courseMode &&
       Data.demoLecture
     ) {
@@ -120,6 +127,16 @@ const PopUp = ({ handleToggle, toggle, url }) => {
               className='border border-gray-500 p-2 placeholder:text-xs w-full'
               placeholder='Last Name *'
             />
+
+            <div className='flex items-center border border-gray-500 '>
+              <input
+                onChange={handleEmail}
+                value={Data.email}
+                type='email'
+                className='p-2 placeholder:text-xs w-full'
+                placeholder='Email *'
+              />
+            </div>
 
             <div className='flex items-center border border-gray-500 '>
               <div className='flex justify-center gap-1 items-center px-2'>

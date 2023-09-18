@@ -17,6 +17,7 @@ const index = () => {
   let initialState = {
     firstName: '',
     lastName: '',
+    email: '',
     phoneNumber: '',
     demoLecture: '',
     courseMode: '',
@@ -32,6 +33,11 @@ const index = () => {
   const handleLName = (e) => {
     setErr(false);
     setData({ ...Data, lastName: e.target.value });
+  };
+
+  const handleEmail = (e) => {
+    setErr(false);
+    setData({ ...Data, email: e.target.value });
   };
 
   const handlePhoneNumber = (e) => {
@@ -54,6 +60,7 @@ const index = () => {
       Data.phoneNumber &&
       Data.firstName &&
       Data.lastName &&
+      Data.email &&
       Data.courseMode &&
       Data.demoLecture
     ) {
@@ -444,7 +451,33 @@ const index = () => {
 
         <section className='w-full flex flex-col text-center items-center gap-2  '>
           <div className='text-base font-extrabold xs:text-xl sdm:text-3xl md:text-4xl mdx:text-4xl mb-10 '>
-            Online & Offline Batches
+            Get a 1 FREE Masterclass/Demo Leacture (Online & Offline)
+          </div>
+
+          <div className='flex w-full justify-start  items-start flex-col gap-4'>
+            <div className='flex flex-col justify-center border-2 text-left rounded-2xl w-full  border-yellow-500 '>
+              <div className='bg-yellow-500 p-4  rounded-t-xl  font-bold '>
+                <div className='text-white text-lg'>FREE MASTERCLASS</div>
+              </div>
+              <div className='flex flex-col gap-2 p-6 border-b-2 text-left border-yellow-500 flex-grow'>
+                <div className='font-bold pb-3'>Online Masterclass</div>
+                <div>Every Saturday</div>
+                <div>5:00 PM to 7:00 PM (Evening)</div>
+                <div>2 hours long</div>
+              </div>
+              <div className='flex flex-col gap-2 p-6 text-left flex-grow'>
+                <div className='font-bold pb-3'>Offline Masterclass</div>
+                <div>Every Sunday</div>
+                <div>5:00 PM to 7:00 PM (Evening)</div>
+                <div>2 hours long</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className='w-full flex flex-col text-center items-center gap-2  '>
+          <div className='text-base font-extrabold xs:text-xl sdm:text-3xl md:text-4xl mdx:text-4xl mb-10 '>
+            Choose from Online & Offline Batches
           </div>
 
           <div className='flex w-full justify-start  items-start flex-col gap-4'>
@@ -554,6 +587,16 @@ const index = () => {
                 type='text'
                 className='border border-gray-500 p-2 placeholder:text-xs w-full'
                 placeholder='Last Name *'
+              />
+            </div>
+
+            <div className='flex items-center border border-gray-500 '>
+              <input
+                onChange={handleEmail}
+                value={Data.email}
+                type='email'
+                className='p-2 placeholder:text-xs w-full'
+                placeholder='Email *'
               />
             </div>
 
